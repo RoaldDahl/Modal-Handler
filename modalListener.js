@@ -2,7 +2,6 @@ const { InteractionType, EmbedBuilder } = require("discord.js");
   
 module.exports = {
   name: "interactionCreate",
-  folder: "Listeners",
     async execute(interaction, client) {
     if (interaction.type !== InteractionType.ModalSubmit) return;
   
