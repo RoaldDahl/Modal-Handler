@@ -14,7 +14,7 @@ module.exports = {
 
     if (modal.permission && !interaction.member.permissions.has(modal.permission)) return interaction.reply({ embeds: [ new EmbedBuilder().setDescription( `⛔ | You don't have the required permissions to use this.`).setColor("#f8312f") ], ephemeral: true });
   
-    if (modal.developer && interaction.user.id !== "611115652471717906") return interaction.reply({ embeds: [ new EmbedBuilder().setDescription( `⛔ | This modal is for developers only.`).setColor("#f8312f") ], ephemeral: true });
+    if (modal.developer && interaction.user.id !== "CHANGEME") return interaction.reply({ embeds: [ new EmbedBuilder().setDescription( `⛔ | This modal is for developers only.`).setColor("#f8312f") ], ephemeral: true });
 
     modal.execute(interaction, client);
   },
